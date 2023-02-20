@@ -5,7 +5,7 @@ export default class Library {
     this.library = library;
   }
 
-  displayBooks() {
+  displayBooks = () => {
     books.innerHTML = '';
     for (let i = 0; i < this.library.length; i += 1) {
       books.appendChild(Library.addBookHtmlElement(this.library[i], i));
@@ -20,7 +20,7 @@ export default class Library {
     });
   }
 
-  static addBookHtmlElement(book, bookNumber) {
+  static addBookHtmlElement = (book, bookNumber) => {
     book.index = bookNumber;
     const bookHtml = document.createElement('div');
     bookHtml.className = 'book';
@@ -32,12 +32,12 @@ export default class Library {
     return bookHtml;
   }
 
-  removeBook(book) {
+  removeBook = (book) => {
     this.library.splice(book.index, 1);
     localStorage.setItem('booksData', JSON.stringify(this.library));
   }
 
-  addBook(book) {
+  addBook = (book) => {
     this.library.push(book);
     localStorage.setItem('booksData', JSON.stringify(this.library));
   }
