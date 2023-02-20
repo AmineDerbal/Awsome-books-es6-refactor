@@ -250,7 +250,7 @@ I would like to thank microverse for the oportunity to learn how to set up this 
 
 - **how will i setup this project in local machine**
 
-  - run the following command in the terminal: git clone https://github.com/lengushuru/awsome-books.git
+  - run the following command in the terminal: git clone https://github.com/AmineDerbal/Awsome-books-es6-refactor.git
 
 
 - **which code editor should i use**
