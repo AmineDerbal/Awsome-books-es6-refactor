@@ -1,4 +1,4 @@
-import { DateTime } from './node_modules/luxon/src/luxon.js';
+import { DateTime } from './modules/luxon.js';
 import Book from './modules/Book.js';
 import Library from './modules/Library.js';
 
